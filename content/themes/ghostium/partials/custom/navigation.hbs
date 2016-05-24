@@ -45,9 +45,11 @@ Ghostium uses Font Awesome you can find all icons available on the url below
   Follow me
 </li>
 <li class="drawer-list-item">
-  <a href="http://eepurl.com/bYa9_H"  target="_blank">
-    <i class="fa fa-envelope"></i>Subscribe
-  </a>
+{{#if @labs.subscribers}}
+  <a class="subscribe-button" href="{{@blog.url}}/subscribe/">
+      <i class="fa fa-envelope"></i>Subscribe
+    </a>
+{{/if}}
 </li>
 <li class="drawer-list-item">
   <a href="http://twitter.com/andergri" target="_blank">
